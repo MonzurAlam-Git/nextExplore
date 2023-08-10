@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -12,10 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html data-theme="forest" lang="en">
-      <body className={inter.className}>
-        <Navbar></Navbar>
-        {children}
-      </body>
+      {/* <Navbar></Navbar> */}
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
